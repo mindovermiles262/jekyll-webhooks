@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/bin/sleep 5
+
+/usr/bin/tmux new-session -d -s webhooks-server
+/usr/bin/tmux send -t webhooks-server "ruby /home/student/webhooks/server.rb -o 0.0.0.0 -p 1989" C-m
