@@ -16,3 +16,8 @@ post '/update-blog' do
   end
 end
 
+# Update .bash_profile on GH merge
+post '/update-bash' do
+  puts "Update Bash Triggered"
+  system('/home/student/webhooks/update-bash-profile.sh')
+end
