@@ -5,7 +5,7 @@
 
 * Changes to the blog are made and pushed to GitHub
 * Github sends a webhook to the Sinatra Server
-* Sinatra checks if merge was made to `deploy` branch
+* Sinatra checks if merge was made to `master` branch
 * Sinatra triggers `jekyll build` to rebuild the blog after pulling the changes
 
 ### Settings
