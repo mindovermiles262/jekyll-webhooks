@@ -1,8 +1,9 @@
 #!/bin/bash
 echo "Changing Directories"
 cd /home/student/www/blog
-echo "Pulling Deploy Branch"
-git pull origin deploy
+echo "Pulling Master Branch"
+git pull origin master
 echo "Building Jekyll"
-jekyll build
+bundle install
+bundle exec jekyll build
 
